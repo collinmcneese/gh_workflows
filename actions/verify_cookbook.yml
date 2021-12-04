@@ -2,6 +2,10 @@ name: verify_cookbook
 
 on:
   workflow_call:
+    inputs:
+      kitchen_args:
+        required: false
+        type: string
 
 jobs:
   verify:
@@ -18,4 +22,4 @@ jobs:
       - name: Unit Test
         run: chef exec rspec
       - name: Kitchen Test
-        run: kitchen test --color
+        run: kitchen test --color ${{ inputs.kitchen_args }}
