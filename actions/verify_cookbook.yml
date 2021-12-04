@@ -1,5 +1,8 @@
 name: verify_cookbook
 
+on:
+  workflow_call:
+
 jobs:
   verify:
     runs-on: ubuntu-latest
