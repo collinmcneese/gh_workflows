@@ -21,4 +21,4 @@ jobs:
       - name: Unit Test
         run: chef exec rspec
       - name: Kitchen Test
-        run: kitchen test --color
+        run: kitchen test
