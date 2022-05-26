@@ -1,4 +1,4 @@
-name: verify_cookbook
+name: chef_verify_cookbook
 
 on:
   workflow_call:
